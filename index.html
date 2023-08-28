@@ -8,8 +8,21 @@
     <meta name="description" content="World&#039;s Most Useless Centralized Wallet">
     <meta name="keywords" content="crypto, bitcoin, wavacat, wavacoin, wallet, stupid, stupidwallet">  
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Tangerine">
+          href="https://fonts.googleapis.com/css?family=Jost">
     <title>Stupid Wallet</title>
+    <script>
+var i = 0;
+var txt = 'Stupid Wallet';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("logo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
     
     <style>
     <!--
@@ -61,17 +74,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
   </head>              
-  <body>
+  <body onLoad=typeWriter()>
   <div class=container>
-   <h1 style="text-align:center">Stupid Wallet</h1>  
+   <h1 style="text-align:center;" id="logo"></h1>  
    <p style="text-align:center">Самый бесполезный криптокошелек в мире!</p>   
    <img src="https://lolhie3.github.io/purse.webp" width=128 alt="Purse">
    <br>
    <center><a class="btn" href="https://stupidwallet_bot.t.me">Telegram</a></center>
    &nbsp;
-    <p style="text-align: center; color: #425f80">© <a href="wavacat.t.me">waveteam</a> 2023</p>
+   <p style="text-align: center; color: #425f80">© <a href="https://wavacat.t.me">waveteam</a> 2023</p>
     </div>
   </body>
+  
 </html>
 
 <!--
